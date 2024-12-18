@@ -1,0 +1,27 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
+</head>
+<body>
+    <h1>Payment for the Workshop</h1>
+    <p>Choose a payment method:</p>
+
+    <form action="confirmation.html" method="post">
+        <label for="card-number">Card Number:</label><br>
+        <input type="text" id="card-number" name="card-number" required><br><br>
+
+        <label for="expiry">Expiry Date:</label><br>
+        <input type="month" id="expiry" name="expiry" required><br><br>
+
+        <label for="cvv">CVV:</label><br>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>

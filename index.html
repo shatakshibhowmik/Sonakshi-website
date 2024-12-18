@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="online-workshop.html">Online Workshop</a></li> <!-- Updated link to new page -->
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+        </nav>
+        <form id="search-form" onsubmit="return searchWorkshops()">
+            <input type="text" id="search-input" placeholder="Search Workshops...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    
+
+    <!-- Main Section -->
+    <section id="workshops">
+        <h1>Our Workshops</h1>
+        <div class="workshop-list">
+            <div class="workshop">
+                <img src="images/workshop4.png" alt="Workshop 1">
+                <h2>Workshop 1</h2>
+                <p>Description of the first workshop. Join us for a great learning experience!</p>
+                <p class="price">Rs.500</p> 
+                <button onclick="window.location.href='register.html'">Join Now</button>
+            </div>
+            <div class="workshop">
+                <img src="images/workshop3.jpeg" alt="Workshop 2">
+                <h2>Workshop 2</h2>
+                <p>Description of the second workshop. Don't miss out on this opportunity!</p>
+                <p class="price">Rs.500</p> 
+                <button onclick="window.location.href='register.html'">Join Now</button>
+            </div>
+            <!-- Add more workshops as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Contact Us: <a href="mailto:sonakshibhowmik12@gmail.com">sonakshibhowmik12@gmail.com</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="contact-us">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Reach out using the form below:</p>
+
+    <div class="contact-container">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message..." rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> sonakshibhowmik12@gmail.com</p>
+            <p><strong>Phone:</strong> +91 6354404442 </p>
+            <p><strong>Address:</strong>Bangakore</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+</footer>
